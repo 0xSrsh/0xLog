@@ -1,0 +1,33 @@
+# Python bytecode and test artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual environments and tooling caches
+.venv/
+venv/
+env/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# Build and package artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Application data and local settings
+.0xlog.json
+.env
+.env.*
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

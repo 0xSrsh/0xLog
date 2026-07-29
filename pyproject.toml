@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "0xlog-cli"
+version = "0.1.0"
+authors = [
+  { name="Soroosh Ghaffari", email="0xSoroosh@gmail.com" },
+]
+description = "A lightweight terminal time tracker with Git branch detection"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+keywords = ["cli", "productivity", "time-tracking", "terminal"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "rich>=10.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/0xSrsh/0xLog"
+Repository = "https://github.com/0xSrsh/0xLog"
+Issues = "https://github.com/0xSrsh/0xLog/issues"
+
+# Terminal command is defined here
+[project.scripts]
+0xlog = "oxlog.cli:main"
