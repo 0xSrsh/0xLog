@@ -31,3 +31,6 @@ dist/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local development files
+local/
