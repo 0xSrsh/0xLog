@@ -1,13 +1,36 @@
 # 0xLog: Terminal Time Tracker
 
+[![PyPI](https://img.shields.io/pypi/v/0xlog-cli.svg)](https://pypi.org/project/0xlog-cli/)
+[![Python](https://img.shields.io/pypi/pyversions/0xlog-cli.svg)](https://pypi.org/project/0xlog-cli/)
+[![License: MIT](https://img.shields.io/pypi/l/0xlog-cli.svg)](https://github.com/0xSrsh/0xLog/blob/main/LICENSE)
+[![CI](https://github.com/0xSrsh/0xLog/actions/workflows/ci.yml/badge.svg)](https://github.com/0xSrsh/0xLog/actions/workflows/ci.yml)
+
 `0xLog` is a lightweight, terminal-based time tracking tool designed to stay out of your way. It operates seamlessly alongside your development workflow, featuring an interactive TUI, Git branch awareness, and file-based syncing.
 
 ## Installation
 
-Install the latest published package with pip:
+The package is published on PyPI as [`0xlog-cli`](https://pypi.org/project/0xlog-cli/).
+
+`0xLog` is a command-line application, so the recommended way to install it is with a tool that gives it an isolated environment and still puts `0xlog` on your `PATH`:
+
+```bash
+pipx install 0xlog-cli
+# Or, if you use uv:
+uv tool install 0xlog-cli
+```
+
+This also avoids the `externally-managed-environment` error (PEP 668) that recent Debian, Ubuntu, and Fedora releases raise when you `pip install` into the system Python.
+
+Inside a virtual environment, plain pip works as well:
 
 ```bash
 python -m pip install 0xlog-cli
+```
+
+To upgrade later:
+
+```bash
+pipx upgrade 0xlog-cli
 ```
 
 For local development, clone the repository and install it in editable mode:
@@ -185,16 +208,16 @@ mklink %USERPROFILE%\.0xlog.json "C:\path\to\synced\folder\.0xlog.json"
 
 ## Contributing
 
-Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [CONVENTIONS.md](CONVENTIONS.md) before opening a pull request.
+Contributions are welcome. Please read [CONTRIBUTING.md](https://github.com/0xSrsh/0xLog/blob/main/CONTRIBUTING.md) and [CONVENTIONS.md](https://github.com/0xSrsh/0xLog/blob/main/CONVENTIONS.md) before opening a pull request.
 
 ## Security
 
-Please follow the private reporting process in [SECURITY.md](SECURITY.md) for suspected vulnerabilities.
+Please follow the private reporting process in [SECURITY.md](https://github.com/0xSrsh/0xLog/blob/main/SECURITY.md) for suspected vulnerabilities.
 
 ## Code of Conduct
 
-Participation in this project is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
+Participation in this project is governed by the [Code of Conduct](https://github.com/0xSrsh/0xLog/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
-0xLog is released under the [MIT License](LICENSE).
+0xLog is released under the [MIT License](https://github.com/0xSrsh/0xLog/blob/main/LICENSE).
